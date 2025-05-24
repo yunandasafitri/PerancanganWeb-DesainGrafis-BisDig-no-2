@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review MacBook Pro 16-inch M4 Max</title>
+    <style>
+        #comments {
+            display: none;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+        button {
+            cursor: pointer;
+            padding: 10px 15px;
+            border: none;
+            background-color: #0071e3;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MacBook Pro 16-inch M4 Max</h1>
+        <p>Laptop ini menawarkan performa luar biasa dengan <strong>chip M4 Max</strong>, layar Liquid Retina XDR, serta desain premium.</p>
+        <button id="toggleButton">Tampilkan Komentar</button>
+        <div id="comments">
+            <p><strong>Arbian Fahreza:</strong> Laptop ini luar biasa! Performa cepat dan layar sangat tajam.</p>
+            <p><strong>Athaya Nash AG:</strong> Cocok untuk desainer grafis dan editor video yang membutuhkan tenaga maksimal.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function () {
+            let comments = document.getElementById("comments");
+            if (comments.style.display === "none") {
+                comments.style.display = "block";
+                this.textContent = "Sembunyikan Komentar";
+            } else {
+                comments.style.display = "none";
+                this.textContent = "Tampilkan Komentar";
+            }
+        });
+    </script>
+</body>
+</html>
